@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Regristrar</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="./login.html">Log in</a></li>
+                    <li><a href="./registrar.html">Registrar</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <form>
+                    <label for="nome">Nome: </label>
+                    <input id="nome" name="nome" type="text" autocomplete="name" required>
+
+                    <label for="data_nascimento">Data de nascimento: </label>
+                    <input id="data_nascimento" type="date" name="data_nascimento">
+
+                    <label for="genero">Gênero: </label>
+                    <select id="genero" name="genero" required>
+                        <option value="" selected disabled>Selecione seu gênero</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+
+
+                    <label for="email">Email: </label>
+                    <input id="email" type="email" name="email" autocomplete="email" required>
+
+                    <label for="senha">Senha: </label>
+                    <input id="senha" type="password" name="senha" required>
+                    <label for="confirmar">Confirmar senha: </label>
+                    <input id="confirmar" type="password" name="confirmar" required>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
